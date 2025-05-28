@@ -8,7 +8,7 @@ import java.io.EOFException
 
 class  SepetDataSource(private val sepetlerDao : SepetlerDaoRetrofit) {
 
-    val kullaniciAdi = "Semih"
+    val kullaniciAdi = "mahmut"
 
     suspend fun sepettekiYemekleriGetir(): List<SepetYemek> =
         withContext(Dispatchers.IO) {

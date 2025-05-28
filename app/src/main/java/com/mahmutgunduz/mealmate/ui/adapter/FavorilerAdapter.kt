@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 
 import com.google.android.material.snackbar.Snackbar
 import com.mahmutgunduz.mealmate.data.entity.FavoriYemekler
+import com.mahmutgunduz.mealmate.databinding.FavorilerAdapterBinding
 import com.mahmutgunduz.mealmate.ui.viewmodel.FavorilerFragmentViewModel
 
 class FavorilerAdapter(val mContext: Context,
@@ -33,10 +34,13 @@ class FavorilerAdapter(val mContext: Context,
 
         var favoriler = favoriliste[position]
 
-        var t = holder.binding
 
 
-        t.kart = favoriler
+
+
+holder.binding.kart= favoriler
+
+
 
 
 
