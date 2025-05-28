@@ -1,0 +1,9 @@
+package com.mahmutgunduz.mealmate.room
+
+import androidx.room.Database
+
+@Database(entities = [FavoriYemekler::class], version = 1)
+abstract  class AppDatabase : RoomDatabase(){
+
+    abstract fun favoriYemeklerDao() : FavoriYemeklerDao
+}
