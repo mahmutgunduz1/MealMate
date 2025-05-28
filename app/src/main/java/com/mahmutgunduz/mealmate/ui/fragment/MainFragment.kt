@@ -13,6 +13,7 @@ import com.mahmutgunduz.mealmate.R
 import com.mahmutgunduz.mealmate.databinding.FragmentMainBinding
 import com.mahmutgunduz.mealmate.ui.adapter.MealsAdapter
 import com.mahmutgunduz.mealmate.ui.viewmodel.MainFragmentViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainFragment : Fragment() {

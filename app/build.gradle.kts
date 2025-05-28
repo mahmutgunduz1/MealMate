@@ -9,12 +9,12 @@ plugins {
 
 android {
     namespace = "com.mahmutgunduz.mealmate"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.mahmutgunduz.mealmate"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -31,21 +31,23 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
-    buildFeatures{
-
-        dataBinding= true
+    buildFeatures {
+        dataBinding = true
         viewBinding = true
+    }
+    kapt {
+        correctErrorTypes = true
+        useBuildCache = true
     }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -57,20 +59,38 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation("androidx.lifecycle:lifecycle-viewmodel:2.5.1")
-    implementation("androidx.activity:activity-ktx:1.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel:2.9.0")
+    implementation("androidx.activity:activity-ktx:1.10.1")
 
-    implementation("com.google.dagger:hilt-android:2.56")
-    kapt("com.google.dagger:hilt-android-compiler:2.56")
 
-    implementation ("androidx.room:room-runtime:2.7.1")
+    implementation(libs.androidx.room.runtime)
     kapt("androidx.room:room-compiler:2.7.1")
-    implementation("androidx.room:room-ktx:2.7.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.0")
+    implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 
-    implementation("com.squareup.retrofit2:retrofit:2.6.0")
-    implementation("com.google.code.gson:gson:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.5.0")
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.google.code.gson:gson:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
-    implementation("com.github.bumptech.glide:glide:4.13.2")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
+
+    
+
+
+    //---------------------------------------
+    // Kotlin stdlib sürümlerini güncelle
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.20")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20")
+
+// Coroutines sürümlerini güncelle
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+
+// Hilt sürümünü güncelle
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
+
+
 }

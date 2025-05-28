@@ -11,7 +11,9 @@ import com.google.android.material.snackbar.Snackbar
 import com.mahmutgunduz.mealmate.R
 import com.mahmutgunduz.mealmate.data.entity.SepetYemek
 import com.mahmutgunduz.mealmate.databinding.HolderDiscountAdapterBinding
+import com.mahmutgunduz.mealmate.ui.fragment.CartDiscountDirections
 import com.mahmutgunduz.mealmate.ui.viewmodel.CartDiscountViewModel
+import com.mahmutgunduz.mealmate.utils.gecisYap
 
 class DiscountAdapter(var mContext: Context,
                       var sepetListesi : List<SepetYemek>,

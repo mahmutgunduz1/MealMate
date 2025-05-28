@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <?xml version="1.0" encoding="utf-8"?>
-
-        <item
-            android:id="@+id/mainFragment"
-            android:title="Anasayfa"
-            android:icon="@drawable/ic_launcher_background"/>
-        <item
-            android:id="@+id/favorilerFragment"
-            android:title="Favoriler"
-            android:icon="@drawable/ic_launcher_background"/>
-
-
-
-        <item
-            android:title="Sepet"
-            android:id="@+id/cartDiscount"
-            android:icon="@drawable/ic_launcher_background" />
-
-        <item
-            android:title="Profil"
-            android:id="@+id/profileFragment"
-            android:icon="@drawable/ic_launcher_background" />
-    </menu>
+    <item
+        android:id="@+id/mainFragment"
+        android:title="Anasayfa"
+        android:icon="@drawable/ic_launcher_background"/>
+    <item
+        android:id="@+id/favorilerFragment"
+        android:title="Favoriler"
+        android:icon="@drawable/ic_launcher_background"/>
+    <item
+        android:title="Sepet"
+        android:id="@+id/cartDiscount"
+        android:icon="@drawable/ic_launcher_background" />
+    <item
+        android:title="Profil"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_launcher_background" />
+</menu>

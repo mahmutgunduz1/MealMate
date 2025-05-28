@@ -1,5 +1,8 @@
 package com.mahmutgunduz.mealmate.data.repository
 
+import com.mahmutgunduz.mealmate.data.datasource.FavoriYemeklerDataSource
+import com.mahmutgunduz.mealmate.data.entity.FavoriYemekler
+import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton

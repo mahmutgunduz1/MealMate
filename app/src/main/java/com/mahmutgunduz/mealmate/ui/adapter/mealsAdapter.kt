@@ -14,7 +14,9 @@ import com.mahmutgunduz.mealmate.R
 import com.mahmutgunduz.mealmate.data.entity.FavoriYemekler
 import com.mahmutgunduz.mealmate.data.entity.Yemekler
 import com.mahmutgunduz.mealmate.databinding.HolderAdapterBinding
+import com.mahmutgunduz.mealmate.ui.fragment.MainFragmentDirections
 import com.mahmutgunduz.mealmate.ui.viewmodel.MainFragmentViewModel
+import com.mahmutgunduz.mealmate.utils.gecisYap
 
 
 class MealsAdapter(
@@ -37,6 +39,8 @@ class MealsAdapter(
     override fun onBindViewHolder(holder: CardTasarimTutucu, position: Int) {
         val yemek = yemekler[position]
         val t = holder.binding
+
+
         t.yemek = yemek
 
 

@@ -6,6 +6,8 @@ import androidx.lifecycle.viewModelScope
 import com.mahmutgunduz.mealmate.data.entity.FavoriYemekler
 import com.mahmutgunduz.mealmate.data.entity.SepetYemek
 import com.mahmutgunduz.mealmate.data.entity.Yemekler
+import com.mahmutgunduz.mealmate.data.repository.FavoriYemeklerRepository
+import com.mahmutgunduz.mealmate.data.repository.SepetRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

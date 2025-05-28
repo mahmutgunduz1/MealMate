@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@{yemek.yemek_fiyat + ' ₺'}"
+            android:text="@{String.format(&quot;%.2f ₺&quot;, yemek.yemek_fiyat)}"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +94,7 @@
                 android:id="@+id/buttonMinus"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:backgroundTint="@color/red"
+                android:backgroundTint="@color/error"
                 android:text="-"
                 android:textSize="24sp"
                 app:cornerRadius="24dp" />
@@ -105,6 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:text="@{String.valueOf(sepet?.yemek_siparis_adet ?: 1)}"
+                android:textColor="@color/text_primary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -112,7 +113,7 @@
                 android:id="@+id/buttonPlus"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:backgroundTint="@color/red"
+                android:backgroundTint="@color/error"
                 android:text="+"
                 android:textSize="24sp"
                 app:cornerRadius="24dp" />

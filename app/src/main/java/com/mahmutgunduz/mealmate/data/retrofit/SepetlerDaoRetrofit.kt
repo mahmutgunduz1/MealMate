@@ -1,6 +1,7 @@
 package com.mahmutgunduz.mealmate.data.retrofit
 
 import com.mahmutgunduz.mealmate.data.entity.CRUDCevap
+import com.mahmutgunduz.mealmate.data.entity.SepetYemeklerCevap
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST

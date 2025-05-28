@@ -6,7 +6,7 @@
     <data>
         <variable
             name="yemek"
-            type="com.mahmutgunduz.mealmate.MainActivity" />
+            type="com.mahmutgunduz.mealmate.data.entity.Yemekler" />
 
 
     </data>

@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Temel renkler -->
+    <!-- Material Design Colors -->
+    <color name="primary">#FF6200EE</color>
+    <color name="primary_dark">#FF3700B3</color>
+    <color name="primary_variant">#FF3700B3</color>
+    <color name="secondary">#FF03DAC5</color>
+    <color name="secondary_variant">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="mavi">#FF1EA4D9</color>
-    <color name="turuncu">#FF5722</color>
+
+    <!-- App Specific Colors -->
+    <color name="red">#FFE53935</color>
+    <color name="orange">#FFFF5722</color>
+    <color name="gray">#FF757575</color>
+    <color name="light_gray">#FFE0E0E0</color>
+    <color name="background_gray">#FFF5F5F5</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#99000000</color>
+    <color name="text_hint">#61000000</color>
+
+    <!-- Status Colors -->
+    <color name="success">#FF4CAF50</color>
+
+    <color name="warning">#FFFFC107</color>
+    <color name="info">#FF2196F3</color>
+
+
+    <color name="scrim">#52000000</color>
+
+    <!-- Divider Colors -->
+    <color name="divider">#1F000000</color>
 
     <!-- Gece modu renkleri -->
     <color name="background">#121212</color>           <!-- Koyu arka plan -->
     <color name="surface">#1E1E1E</color>              <!-- Kart, yüzey arka plan -->
-    <color name="primary">#BB86FC</color>              <!-- Yumuşak mor -->
     <color name="primaryVariant">#3700B3</color>       <!-- Koyu mor -->
-    <color name="secondary">#03DAC6</color>            <!-- Yardımcı renk turkuaz -->
     <color name="secondaryVariant">#03DAC6</color>     <!-- Aynı turkuaz -->
     <color name="error">#CF6679</color>                <!-- Açık kırmızı hata rengi -->
 
@@ -30,4 +55,6 @@
 
     <!-- Vurgu -->
     <color name="koyuTuruncu">#FF5722</color>          <!-- Turuncu vurgu -->
+
+    <color name="turuncu">#FF5722</color>
 </resources>

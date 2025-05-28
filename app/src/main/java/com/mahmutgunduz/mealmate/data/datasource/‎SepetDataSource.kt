@@ -1,6 +1,7 @@
 package com.mahmutgunduz.mealmate.data.datasource
 
 import com.mahmutgunduz.mealmate.data.entity.SepetYemek
+import com.mahmutgunduz.mealmate.data.retrofit.SepetlerDaoRetrofit
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.EOFException

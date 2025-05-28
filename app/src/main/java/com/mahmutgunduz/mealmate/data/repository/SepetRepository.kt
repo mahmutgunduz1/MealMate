@@ -1,5 +1,8 @@
 package com.mahmutgunduz.mealmate.data.repository
 
+import com.mahmutgunduz.mealmate.data.datasource.SepetDataSource
+import com.mahmutgunduz.mealmate.data.entity.SepetYemek
+
 class SepetRepository(var sds : SepetDataSource) {
 
 

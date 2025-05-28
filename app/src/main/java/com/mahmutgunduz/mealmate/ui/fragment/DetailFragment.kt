@@ -89,7 +89,7 @@ class DetailFragment : Fragment() {
                 val toplamFiyat = deger * fiyat
 
                 binding.textPrice.text = String.format("₺ %.2f", toplamFiyat)
-                binding.textView4.text = String.format("₺ %.2f", fiyat)
+                binding.textPrice.text = String.format("₺ %.2f", fiyat)
 
                 binding.buttonMinus.alpha = if (deger <= 1) 0.1f else 1.0f
                 binding.buttonMinus.isClickable = deger > 1
